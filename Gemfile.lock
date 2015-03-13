@@ -274,7 +274,7 @@ GEM
       simple_oauth (~> 0.2, >= 0.2.0, < 0.3.0)
 
 PLATFORMS
-  ruby
+  ruby (2.1)
 
 DEPENDENCIES
   arel (= 6.0.0.beta2)
