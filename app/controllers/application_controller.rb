@@ -32,5 +32,11 @@ class ApplicationController < ActionController::Base
         redirect_to root_url, :alert => 'You need to sign in for access to this page.'
       end
     end
-
+def action
+  @lat_lng = cookies[:lat, :lng].split(",")
+  @lat = cookies[:lat]
+  @long = cookies[:lng]
+  @limit = session[:result_limit]
+  @service = session[:service]
+end
 end

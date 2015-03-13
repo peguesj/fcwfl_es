@@ -1,0 +1,2 @@
+module ResultlistsHelper
+end

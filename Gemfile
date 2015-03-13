@@ -22,6 +22,11 @@ gem 'pg'
 gem 'pundit'
 gem 'simple_form'
 gem 'thin'
+gem 'arel', '6.0.0.beta2'
+gem 'gmaps4rails'
+gem 'underscore-rails'
+gem 'geocoder'
+gem 'yelp'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

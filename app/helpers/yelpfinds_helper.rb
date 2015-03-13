@@ -1,0 +1,2 @@
+module YelpfindsHelper
+end

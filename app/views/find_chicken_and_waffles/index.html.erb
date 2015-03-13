@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
+      <h2>FCW</h2>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="col-sm-2">
+            <form action="#" method="post"><label>Distance: </label><input name="distance" type="range" id="distance" max="20" min="1" step="1" value="3">
+      <input type="submit">
+ <fieldset><legend>Service</legend>
+        <p>
+          <label>
+            <input type="checkbox" name="service" value="Yelp" id="service_0">
+            Yelp</label>
+          <br>
+          <label>
+            <input type="checkbox" name="service" value="deliverycom" id="service_1">
+            Delivery.com</label>
+          <br>
+          <label>
+            <input type="checkbox" name="service" value="seamless" id="service_2">
+            Seamless</label>
+          <br>
+          <label>
+            <input type="checkbox" name="service" value="grub" id="service_3">
+            GrubHub</label>
+          <br>
+          <label>
+            <input type="checkbox" name="service" value="eat24" id="service_4">
+            Eat24</label>
+          <br>
+          <label>
+            <input type="checkbox" name="service" value="orderup" id="service_5">
+            OrderUp</label>
+          <br>
+        </p>
+      </fieldset></form>
+    </div>
+  <div class="col-sm-7" id="map" style='max-width: 800px; height: 400px;'>
+</div>
+<div class="col-sm-3">
+<h2>Results</h2>
+
+</div>
+  </div>
+</div>

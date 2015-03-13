@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Resultlists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Rating</th>
+      <th>Reviews</th>
+      <th>Url</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @resultlists.each do |resultlist| %>
+      <tr>
+        <td><%= resultlist.title %></td>
+        <td><%= resultlist.address %></td>
+        <td><%= resultlist.city %></td>
+        <td><%= resultlist.state %></td>
+        <td><%= resultlist.zip %></td>
+        <td><%= resultlist.rating %></td>
+        <td><%= resultlist.reviews %></td>
+        <td><%= resultlist.url %></td>
+        <td><%= resultlist.image %></td>
+        <td><%= link_to 'Show', resultlist %></td>
+        <td><%= link_to 'Edit', edit_resultlist_path(resultlist) %></td>
+        <td><%= link_to 'Destroy', resultlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Resultlist', new_resultlist_path %>
