@@ -8,10 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails-html-sanitizer', '~> 1.0'
-gem 'eventmachine'
-require "open-uri"
-gem 'execjs', '2.4.0'
-gem 'therubyracer'
+gem 'eventmachine', '>=1.0.3', :git => "git://github.com/eventmachine/eventmachine.git"
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0.0.beta2'

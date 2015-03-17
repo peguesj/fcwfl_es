@@ -3,8 +3,8 @@ class ResultsController < ApplicationController
 		@results = Result.all
 	end 
 	def create
-		if session(:service => "Yelp"),
-		 service = Yelpfind.results 
+		if @service == 'Yelp'
+		 service = Yelpfind.results
 			Result.where(:name => service['name'] ,:rating => service['rating'] , :address => service['address'], :city => service['city'] , :zip => service['zip'], :tel => service['tel'])
 		end
 	end

@@ -5,6 +5,7 @@ class Yelpfind < ActiveRecord::Base
 }
 
 	search = Yelp.client.search(params)
+
 	
 end
 
