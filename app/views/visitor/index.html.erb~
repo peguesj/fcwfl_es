@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-xs-12 col-md-8">
-<div class="jumbotron">
+<div class="jumbotron fcwfl">
   <div class="container">
-<div class="fcwfl"><h1>Find Chicken And Waffles</h1>
+<div class=""><h1>Find Chicken And Waffles</h1>
      
 <%=link_to(signin_path, class: "btn btn-block btn-social btn-facebook") do %>
 	<i class="fa fa-facebook"></i>Sign in with Facebook
