@@ -15,10 +15,11 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
+<%= yield %>
     <main role="main">
-	<%= render 'layouts/openmap' %>
+
        <%= render 'layouts/messages' %>
-       <%= yield %>
+       
     </main>
   </body>
 </html>

@@ -1,5 +1,4 @@
-class FindChickenAndWafflesController < ApplicationController  
-def index
+class FindChickenAndWafflesController < ApplicationController  def index
   end
 
   def putTerm

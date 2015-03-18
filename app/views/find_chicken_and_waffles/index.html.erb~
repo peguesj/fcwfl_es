@@ -1,7 +1,5 @@
 <div id="relocate">
-	<a href="#" onClick="relocate();">
-		<i class="fa fa-location-arrow"></i>
-	</a>
+	<i class="fa fa-location-arrow"></i>
 </div>
 <div id="map_canvas">
 

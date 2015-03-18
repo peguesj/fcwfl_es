@@ -1,3 +1,5 @@
+require 'yelp'
+
 Yelp.client.configure do |config|
   config.consumer_key = 'MPS3BDZXF1Ukh21V7-51bw'
   config.consumer_secret = 'f6VUr125zO0cBsaHQYZXLPSY35g'
