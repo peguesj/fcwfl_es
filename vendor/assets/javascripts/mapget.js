@@ -14,6 +14,13 @@ function getCookie(c_name) {
     return "";
 }
 
+function set_cookie(name, value) {
+  document.cookie = name +'='+ value +'; Path=/;';
+}
+function delete_cookie(name) {
+  document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
 function getGeoLocation() {
     navigator.geolocation.getCurrentPosition(setGeoCookie);
 }
@@ -35,8 +42,12 @@ var inactive = false;
 
 $(document).ready(function() {
   // initialize the map on load
-  getGeoLocation();
-  initialize();
+  if ("SF_LAT" in window) {
+	initialize();}
+else {
+	getGeoLocation();
+ 	 initialize();
+}
 });
 
 /**
@@ -86,6 +97,17 @@ var bind_controls = function(map) {
     search(map);
   });
 
+  // get the search button and bind a click event to it for searching
+  google.maps.event.addDomListener(window, 'load', function(e) {
+    e.preventDefault();
+    search(map);
+  });
+  var reloc = function(e) {
+    e.preventDefault();
+    search(map);
+  };
+
+
   // push the search controls onto the map
   map.controls[google.maps.ControlPosition.TOP_LEFT].push(controlContainer);
 }
@@ -103,7 +125,7 @@ var search = function(map) {
 
   // post to the search with the search term, take the response data
   // and process it
-  $.post('/search', { term: searchTerm }, function(data) {
+  $.post('/find_chicken_and_waffles/search', { term: searchTerm }, function(data) {
     inactive = true;
 
     // do some clean up
@@ -148,8 +170,8 @@ var capture = function(i, map, business) {
  */
 var build_results_container = function(business) {
   return [
-    '<div class="result">',
-      '<img class="biz_img" src="', business['image_url'], '">',
+    '<div class="result">','<div class="result_left">',
+      '<img class="biz_img" src="', business['image_url'], '">','</div>','<div class="result_right">',
       '<h5><a href="', business['url'] ,'" target="_blank">', business['name'], '</a></h5>',
       '<img src="', business['rating_img_url'], '">',
       '<p>', business['review_count'], ' reviews</p>',
@@ -207,4 +229,13 @@ var clearMarkers = function() {
 
   markersArray = [];
 };
+var relocate = function() {
+	clearMarkers();
+	delete_cookie('lat');
+	delete_cookie('lng');
+	getGeoLocation();
+	initialize();
+	reloc();
+	search(map);
 
+};
