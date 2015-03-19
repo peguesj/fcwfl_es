@@ -1,8 +1,8 @@
-<div id="relocate">
+<button type="button" class="btn btn-default"><div id="relocate">
 	<a id="reloc" href="#" onClick="relocate();">
 		<i class="fa fa-location-arrow"></i>
 	</a>
-</div>
+</div></button>
 <div id="map_canvas">
 
 </div>
@@ -16,7 +16,7 @@
 </form>
   <div class="attribution">
     <p>powered by Yelp</p>
-    <p class="burst" <%= image_tag "burst_tiny.png" %>
+    <p class="burst"> <%= image_tag "burst_tiny.png" %>
 </p>
 
 </div>
