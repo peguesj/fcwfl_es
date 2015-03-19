@@ -102,6 +102,10 @@ var bind_controls = function(map) {
     e.preventDefault();
     search(map);
   });
+  var reloc = function(e) {
+    e.preventDefault();
+    search(map);
+  };
 
 
   // push the search controls onto the map
@@ -231,5 +235,7 @@ var relocate = function() {
 	delete_cookie('lng');
 	getGeoLocation();
 	initialize();
+	reloc();
+	search(map);
 
-}
+};

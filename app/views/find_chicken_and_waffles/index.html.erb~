@@ -1,5 +1,7 @@
 <div id="relocate">
-	<i class="fa fa-location-arrow"></i>
+	<a id="reloc" href="#" onClick="relocate();">
+		<i class="fa fa-location-arrow"></i>
+	</a>
 </div>
 <div id="map_canvas">
 
@@ -9,7 +11,7 @@
     <form>
       <input type="text">
       <a id="map_search_submit" href="#">
-	<span class"glyphicon glyphicon-search"></span>
+	<span class="glyphicon glyphicon-search"></span>
 </a>
 </form>
   <div class="attribution">
