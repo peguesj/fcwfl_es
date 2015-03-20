@@ -6,3 +6,5 @@
 			<a href="#list" data-toggle="tab">List</a>
 		</li>
 	</ul>
+<style type="text/css">
+main {display:none;}
