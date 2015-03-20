@@ -10,9 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require mapget
 //= require jquery
 //= require jquery_ujs
+//= require mapget
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
