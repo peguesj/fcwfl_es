@@ -1,4 +1,8 @@
-<button type="button" id="relocate" onClick="relocate();" class="btn btn-default">
+<div id="container" style="margin-top:50px;height:100%;">
+<%= render 'layouts/maptab' %>
+<div id="map-tab-content" class="tab-content" style="height:100%">
+	<div class="tab-pane active" style="height:100%;" id="mapTab">
+		<button type="button" id="relocate" onClick="relocate();" class="btn btn-default">
 	
 		<i class="fa fa-location-arrow"></i>
 	
@@ -7,7 +11,7 @@
 
 </div>
 <div id="control_container">
-<div id="map_search">
+ <div id="map_search" style="visibility:hidden;">
     <form>
       <input type="text">
       <a id="map_search_submit" href="#">
@@ -19,8 +23,12 @@
     <p class="burst"> <%= image_tag "burst_tiny.png" %>
 </p>
 
+</div> 
+
 </div>
+</div>
+</div>
+<div class="tab-pane" id="list">
  <div id="results"></div>
 </div>
 </div>
-

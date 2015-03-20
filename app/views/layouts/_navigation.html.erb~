@@ -15,7 +15,13 @@
         <%= render 'layouts/navigation_links' %>
       </ul>
     </div>
-	
+	<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+		<li class="active">
+			<a href="#mapTab" data-toggle="tab">Map</a>
+		</li>
+		<li>
+			<a href="#list" data-toggle="tab">List</a>
+		</li>
+	</ul>
   </div>
 </nav>
-
