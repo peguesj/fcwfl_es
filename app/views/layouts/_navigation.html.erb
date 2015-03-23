@@ -2,7 +2,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header"><% if user_signed_in? %>
-	<p class="navbar-text"> <% User do |u| %><%= u.name %><% end %> </p>
+	<p class="navbar-text"> <% user do |u| %><%= u.name %><% end %> </p>
  <% end %>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
