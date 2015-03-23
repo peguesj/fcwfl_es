@@ -68,7 +68,7 @@ var initialize = function() {
     zoomControlOptions: {
       position: google.maps.ControlPosition.RIGHT_BOTTOM,
       style: google.maps.ZoomControlStyle.SMALL
-    }
+    },
     styles: fcwfl_esStyle
   };
 

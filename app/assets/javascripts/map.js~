@@ -69,6 +69,7 @@ var initialize = function() {
       position: google.maps.ControlPosition.RIGHT_BOTTOM,
       style: google.maps.ZoomControlStyle.SMALL
     }
+    styles: fcwfl_esStyle
   };
 
   // create a new Google map with the options in the map element
