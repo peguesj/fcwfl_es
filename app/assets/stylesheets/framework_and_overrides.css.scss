@@ -7,9 +7,16 @@ img {
   @extend .img-responsive;
   margin: 0 auto;
   }
+// header 
+.navbar-inverse {
+    background-color: rgba(219, 204, 154, 0.42) !important;
+  border-color: #CB9A00 !important;
+}
 // override for the 'Home' navigation link
 .navbar-brand {
-  font-size: inherit;
+    font-size: 2em;
+  font-family: 'Helvetica Neue';
+  font-weight: lighter;
   }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY

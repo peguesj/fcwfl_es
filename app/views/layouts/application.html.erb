@@ -5,6 +5,7 @@
     <title><%= content_for?(:title) ? yield(:title) : "Find Chicken&Waffles" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Find Chicken&Waffles" %>">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<%= asset_path 'full-slider.css' %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
