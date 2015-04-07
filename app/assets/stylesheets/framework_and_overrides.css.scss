@@ -19,6 +19,35 @@ img {
   font-weight: lighter;
   }
 
+// result new 
+img.biz_img {
+    height: 50px;
+}
+
+.result_right {
+    display: inline-block;
+    float: left;
+    width: 70%;
+}
+
+.result_left {
+    float: left;
+    background: #FFF;
+    border: thin solid black;
+}
+
+div.result {
+    background: #FFF;
+    /* border: thin solid black; */
+    height: 60px;
+    border-bottom: #000 !important;
+}
+
+div.result_right img {
+    FLOAT: right;
+}
+
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
