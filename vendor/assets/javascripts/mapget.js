@@ -437,6 +437,7 @@ var geocode_address = function(map, name, location_object) {
         map: map,
         position: results[0].geometry.location,
         title: name
+        icon: "https://s3.amazonaws.com/f.cl.ly/items/2A3r1x1d2c2p1A1m343r/waffle.png"
       });
 
       // save the marker object so we can delete it later
