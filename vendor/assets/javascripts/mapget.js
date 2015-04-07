@@ -432,12 +432,13 @@ var geocode_address = function(map, name, location_object) {
     if (status === google.maps.GeocoderStatus.OK) {
 
       // create a marker and drop it on the name on the geocoded location
+      var wafflepin = 'https://s3.amazonaws.com/f.cl.ly/items/2A3r1x1d2c2p1A1m343r/waffle.png',
       var marker = new google.maps.Marker({
         animation: google.maps.Animation.DROP,
         map: map,
         position: results[0].geometry.location,
-        title: name
-        icon: "https://s3.amazonaws.com/f.cl.ly/items/2A3r1x1d2c2p1A1m343r/waffle.png"
+        title: name,
+        icon: waflepin
       });
 
       // save the marker object so we can delete it later
