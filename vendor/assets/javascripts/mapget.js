@@ -439,7 +439,7 @@ var geocode_address = function(map, name, location_object) {
         map: map,
         position: results[0].geometry.location,
         title: name,
-        icon: waflepin
+        icon: wafflepin
       });
 
       // save the marker object so we can delete it later
