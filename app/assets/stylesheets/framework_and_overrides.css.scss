@@ -9,7 +9,7 @@ img {
   }
 // header 
 .navbar-inverse {
-    background-color: rgba(219, 204, 154, 0.42) !important;
+    background-color: rgba(219, 204, 154, 1) !important;
   border-color: #CB9A00 !important;
 }
 // override for the 'Home' navigation link
@@ -22,6 +22,8 @@ img {
 // result new 
 img.biz_img {
     height: 50px;
+    border-radius:25px;
+    border:thin solid antiquewhite;
 }
 
 .result_right {
@@ -32,19 +34,52 @@ img.biz_img {
 
 .result_left {
     float: left;
-    background: #FFF;
-    border: thin solid black;
+}
+.result_right span {
+  font-size: 1.4em;
+}
+.ratings {
+  font-family: 'Raleway', sans-serif;
+}
+span.rating-1:before{
+  content: "★";
+
+}
+span.rating-2:before{
+  content: "★★";
+
+}
+span.rating-3:before{
+  content: "★★★";
+
 }
 
+span.rating-4:before{
+  content: "★★★★";
+
+  unicode-bidi: bidi-override;
+  direction: rtl;
+
+}
+span.rating-5:before{
+  content: "★★★★★";
+
+}
 div.result {
-    background: #FFF;
+    background: rgba(219, 204, 154, 0.42) !important;
     /* border: thin solid black; */
     height: 60px;
-    border-bottom: #000 !important;
+    border-bottom: #CB9A00 !important;
+
+
 }
 
 div.result_right img {
-    FLOAT: right;
+    FLOAT: left;
+}
+
+div.results:first-child {
+
 }
 
 
