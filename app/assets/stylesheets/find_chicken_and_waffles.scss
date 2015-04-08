@@ -78,6 +78,10 @@ z-index:9999;
   width: 100%
 }
 
+#results .result:focus, #results .result:hover {
+  background-color: rgba(145, 136, 105, 0.42);
+}
+
 #results .result {
   clear: both;
 
@@ -87,7 +91,7 @@ z-index:9999;
   -ms-animation: fadein .5s; /* Internet Explorer */
   -o-animation: fadein .5s; /* Opera */
 
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(213,206,166,0)), color-stop(40%,rgba(201,193,144,0.28)), color-stop(100%,rgba(123, 107, 9, 0.04))), rgba(219, 204, 154, 0.42); /* Chrome,Safari4+ */
+background: rgba(219, 204, 154, 0.42); /* Chrome,Safari4+ */
 
 
   border-bottom: 1px solid #e5e5e1;
