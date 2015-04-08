@@ -87,10 +87,12 @@ z-index:9999;
   -ms-animation: fadein .5s; /* Internet Explorer */
   -o-animation: fadein .5s; /* Opera */
 
-  background: #fff;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(213,206,166,0)), color-stop(40%,rgba(201,193,144,0.28)), color-stop(100%,rgba(123, 107, 9, 0.04))), rgba(219, 204, 154, 0.42); /* Chrome,Safari4+ */
+
+
   border-bottom: 1px solid #e5e5e1;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 5px 5px 5px 12px;
 
   padding: 5px;
   text-align: left;

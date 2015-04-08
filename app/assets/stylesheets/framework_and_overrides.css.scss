@@ -65,8 +65,20 @@ span.rating-5:before{
   content: "★★★★★";
 
 }
+p.rightarrow{
+  font-size: 2em;
+  display: inline-block;
+  float: right;
+  height: 100%;
+  border-left: thin solid antiquewhite;
+  width: 50px;
+  margin-bottom: -33px;
+  overflow: overlay;
+
+}
 div.result {
-    background: rgba(219, 204, 154, 0.42) !important;
+  
+ 
     /* border: thin solid black; */
     height: 60px;
     border-bottom: #CB9A00 !important;
