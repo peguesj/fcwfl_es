@@ -14,3 +14,11 @@
  *= require_self
  */
 
+.empty {
+  background-color: transparent;
+  border: thick solid white;
+  font-family: "Helvetica Neue", Helvetica, "Open Sans";
+  font-size: 3em;
+  border-radius: -32px;
+  color: #FFF;
+}
