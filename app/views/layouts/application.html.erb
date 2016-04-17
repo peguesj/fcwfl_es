@@ -16,11 +16,8 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
 
-    <main role="main" style="height:100%;">
+    <main role="main" style="height:100vh;">
 	 <%= render 'layouts/messages' %>
 <%= yield %> 
     </main>

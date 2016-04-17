@@ -13,12 +13,26 @@
  *= require_tree .
  *= require_self
  */
-
 .empty {
-  background-color: transparent;
-  border: thick solid white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid white;
   font-family: "Helvetica Neue", Helvetica, "Open Sans";
-  font-size: 3em;
-  border-radius: -32px;
+  font-size: 300%;
+  border-radius: 2em;
   color: #FFF;
+  font-weight: 100;
+  text-shadow: 1px 1px 1px black;
+}
+.empty a {
+  COLOR: white;
+}
+.empty a:hover {
+  text-decoration: none !important;
+  color:#908484;
+}
+.empty:hover {
+  background-color: tan;
+  border: none;
+  text-shadow: none;
+  font-weight: 400;
 }
