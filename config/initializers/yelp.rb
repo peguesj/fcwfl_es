@@ -1,6 +1,4 @@
+require 'yelp/fusion'
 Yelp.client.configure do |config|
-  config.consumer_key = 'MPS3BDZXF1Ukh21V7-51bw'
-  config.consumer_secret = 'f6VUr125zO0cBsaHQYZXLPSY35g'
-  config.token = '4wmPjw4iDEE-SB8nRXbHJaLAV9aFXuwt'
-  config.token_secret = 'iCINDMvAy26vH55VjM7qf6_8-HQ'
+  config.API_KEY = '_k3rocol4m6gzk0NOCswQat1oCUi2Q_YFVgL-zy63nYJm_ZW3x0j5kzmOtlqSluGvJWgdhT8oRwoFwdtLHMmxvLSUtHm5B9rEEnLp6DyQfGcoyEgdOc_ZK9acTbfW3Yx'
 end

@@ -332,13 +332,21 @@ var clearMarkers = function() {
 
   markersArray = [];
 };
-var relocate = function() {
-	clearMarkers();
-	delete_cookie('lat');
-	delete_cookie('lng');
-	getGeoLocation();
-	initialize();
-	reloc();
-	search(map);
+var setLoaded = function(isLoaded) {
+    sessionStorage.setItem('loaded', isLoaded);
+    return sessionStorage.getItem('loaded')
+}
 
+var getLoaded = function() {
+    var load = sessionStorage.getItem('loaded');
+    return load
+}
+
+var relocate = function() {
+    clearMarkers();
+    delete_cookie('lat');
+    delete_cookie('lng');
+    getGeoLocation();
+    initialize();
+    setLoaded("true");
 };
