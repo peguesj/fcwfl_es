@@ -308,7 +308,7 @@ DEPENDENCIES
   launchy
   omniauth
   omniauth-facebook
-  pg
+  pg (~> 1.1.3)
   pry-rails
   pry-rescue
   pundit
