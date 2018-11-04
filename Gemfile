@@ -14,7 +14,7 @@ gem 'execjs', '2.4.0'
 gem 'therubyracer'
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0.0.beta2'
+  gem 'web-console', '~> 2.1.3'
   gem 'spring'
 end
 gem 'bootstrap-sass'

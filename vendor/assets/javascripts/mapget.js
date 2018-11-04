@@ -38,7 +38,7 @@ var SF_LAT = getCookie("lat");
 var SF_LNG = getCookie("lng");
 var QUERY_DELAY = 400;
 var inactive = false;
-
+var API_KEY = 'AIzaSyCHKQtG7RD_VSnl8Sld3xQEJQcq7N0tOPs';
 
 $(document).ready(function() {
   // initialize the map on load
