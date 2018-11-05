@@ -20,6 +20,7 @@ end
 gem 'bootstrap-sass'
 gem 'figaro', '>= 1.0.0.rc1'
 gem 'high_voltage'
+gem 'json', '>= 1.8.6'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'pg', '~>0.11'
@@ -30,11 +31,13 @@ gem 'arel', '6.0.0.beta2'
 gem 'gmaps4rails'
 gem 'underscore-rails'
 gem 'geocoder'
-gem 'yelp-fusion'
+gem 'yelp-fusion', '0.3-beta' 
+require 'yelp/fusion'
 gem 'xpath', '~>2.0.0'
 gem 'rails_serve_static_assets'
 gem 'rails_stdout_logging'
 gem 'rails_12factor'
+gem 'minitest', '>=4.2.0'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -43,7 +46,7 @@ group :development do
   gem 'spring-commands-rspec'
 end
 group :development, :test do
-  gem 'factory_girl_rails'
+  gem 'factory_bot'
   gem 'faker'
   gem 'pry-rails'
   gem 'pry-rescue'
