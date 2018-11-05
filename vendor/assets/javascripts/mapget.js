@@ -32,6 +32,7 @@ function setGeoCookie(position) {
     document.cookie = "lng=" + escape(cookie_val2);
 
 }
+google.maps.event.addDomListener(window, 'load', initialize);
 
 var markersArray = [];
 var SF_LAT = getCookie("lat");
