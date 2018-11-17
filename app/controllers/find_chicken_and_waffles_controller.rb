@@ -15,6 +15,6 @@ end
                        limit: 16, 
 			}
 	coordinates = {latitude: cookies[:lat], longitude: cookies[:lng]}
-    render json: Yelp.client.search_by_coordinates(coordinates, parameters)
+    render json: Yelp::Fusion.client.search_by_coordinates(coordinates, parameters)
   end
 end
