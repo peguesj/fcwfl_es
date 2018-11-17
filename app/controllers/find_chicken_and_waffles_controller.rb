@@ -16,5 +16,6 @@ end
 			}
 	coordinates = {latitude: cookies[:lat], longitude: cookies[:lng]}
     render json: Yelp::Fusion.client.search_by_coordinates(coordinates, parameters)
+#    render json: "https://api.yelp.com/v3/businesses/search?term=#{paramaters.term}&latitude=#{coordinates.latitude}&longitude=#{parameters.longitude}"
   end
 end

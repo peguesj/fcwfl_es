@@ -42,16 +42,16 @@ var inactive = false;
 //var API_KEY = 'AIzaSyCHKQtG7RD_VSnl8Sld3xQEJQcq7N0tOPs';
 //var API_KEY = 'AIzaSyCHKQtG7RD_VSnl8Sld3xQEJQcq7N0tOPs';
 
-$(document).ready(function() {
-  // initialize the map on load
-    getGeoLocation();
-  if ("SF_LAT" in window) {
-	initialize();}
-else {
-	getGeoLocation();
- 	 initialize();
-}
-});
+//$(document).ready(function() {
+//  // initialize the map on load
+//    getGeoLocation();
+//  if ("SF_LAT" in window) {
+//	initialize();}
+//else {
+//	getGeoLocation();
+// 	 initialize();
+//}
+//});
 
 
 
@@ -175,10 +175,8 @@ var initialize = function() {
 
   // create a new Google map with the options in the map element
   var map = new google.maps.Map($('#map_canvas')[0], mapOptions);
+};
 
-  bind_controls(map);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
 /**
  * Bind and setup search control for the map
  *
@@ -221,7 +219,8 @@ var bind_controls = function(map) {
  * param: map - the Google map object
  */
 var search = function(map) {
-  var searchTerm = $('#map_search input[type=text]').val();
+//  var searchTerm = $('#map_search input[type=text]').val();
+  var searchTerm = $('chicken and waffles');
 
   if (inactive === true) { return };
 
@@ -349,6 +348,6 @@ var relocate = function() {
     delete_cookie('lat');
     delete_cookie('lng');
     getGeoLocation();
-    initialize();
+//    initialize();
     setLoaded("true");
 };
